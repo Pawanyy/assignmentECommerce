@@ -26,7 +26,7 @@ export default function ProductDetails() {
   }, [id]);
 
   if (!product) {
-    return <div>Loading...</div>;
+    return <h1 className="text-center text-3xl font-bold text-gray-500 italic">Loading...</h1>;
   }
 
   return (
