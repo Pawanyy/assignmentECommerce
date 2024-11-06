@@ -5,11 +5,13 @@ import { Outlet } from "react-router-dom";
 export default function Layout() {
   return (
     <>
-      <Header />
-      <main className="bg-gray-200 max-w-screen-xl mx-auto">
-        <Outlet />
-      </main>
-      <Footer />
+      <div className="min-h-screen bg-background text-foreground">
+        <Header />
+        <main className="max-w-screen-xl mx-auto">
+          <Outlet />
+        </main>
+        <Footer />
+      </div>
     </>
   );
 }
